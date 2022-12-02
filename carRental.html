@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carRental</title>
+    <link rel="stylesheet" href="/carRental.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <hr id="topHeader">
+    <div class="header">
+        <div class="headcontainer">
+            <button class="headings">HOME</button>
+            <button class="headings">OUR SERVICES</button>
+            <button class="headings">GALLERY</button>
+            <button class="headings">LOCATIONS</button>
+            <button class="headings">FAQs</button>
+            <button class="headings">FEEDBACK</button>
+            <button class="headings">CONTACT</button>
+            <button class="headings">ABOUT US</button>
+        </div>
+    </div>
+    <div class="headImgcontainer">
+        <img src="/Assets/Images/header3.jpg" id="headerImg">
+        <figcaption id="head1">CAR RENTAL DEALS</figcaption>
+        <figcaption id="head2">LIVE THE LIFE</figcaption>
+    </div>
+    <div class="header2">
+        <h1>Best Car Rental In The City</h1>
+        <h4>Wanna get a ride?<br>Get the best possible deals and cars nearby you at lowest price and with wide range of cars.</h4>
+    </div>
+    <h1 class="popularHeading">OUR POPULAR HIRE DESTINATIONS</h1><hr id="popBelow">
+    <div class="popPlaces">
+        <div class="row">
+            <div class="placesBox"><img src="/Assets/Images/ahmedabad.jpg" class="places"><div class="popNames"><p>AHMEDABAD</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/bengaluru.jpg" class="places"><div class="popNames"><p>BENGALURU</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/delhi.jpg" class="places"><div class="popNames"><p>DELHI</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/kanpur.jpg" class="places"><div class="popNames"><p>KANPUR</p></div></div>
+        </div>
+        <div class="row">
+            <div class="placesBox"><img src="/Assets/Images/mumbai.jpg" class="places"><div class="popNames"><p>MUMBAI</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/noida.jpg" class="places"><div class="popNames"><p>NOIDA</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/surat.jpg" class="places"><div class="popNames"><p>SURAT</p></div></div>
+            <div class="placesBox"><img src="/Assets/Images/varanasi.jpg" class="places"><div class="popNames"><p>VARANASI</p></div></div>
+        </div>
+    </div>
+    <h1 class="popularHeading">BOOK YOUR CAR</h1><hr id="bookBelow">
+    <div class="formcontainer">
+        <img src="/Assets/Images/mustang2.png" alt="">
+        <div class="form">
+            <div class="fillupForm">
+                <h1>It's easy for you<br>
+                    to rent a car
+                </h1>
+                <select name="locations" class="locations">
+                    <option value="1">Select Your Pickup Location</option>
+                    <option value="2">Ahmedabad</option>
+                    <option value="3">Bengaluru</option>
+                    <option value="4">Delhi</option>
+                    <option value="5">Ghaziabad</option>
+                    <option value="6">Kanpur</option>
+                    <option value="7">Lucknow</option>
+                    <option value="8">Mirzapur</option>
+                    <option value="9">Mumbai</option>
+                    <option value="10">Noida</option>
+                    <option value="11">Panvel</option>
+                    <option value="12">Pune</option>
+                    <option value="13">Surat</option>
+                    <option value="14">Vapi</option>
+                    <option value="15">Varanasi</option>
+                </select><br>
+                <input type="date" name="pickup date" class="pickupDate" value="DD-MM-YYYY" min="01-01-2022" max="31-12-2023">
+                <input type="time" name="pickup time" class="pickupTime" value="hh-min" form><br>
+                <select name="locations" class="locations">
+                    <option value="1">Select Your Drop Location</option>
+                    <option value="2">Ahmedabad</option>
+                    <option value="3">Bengaluru</option>
+                    <option value="4">Delhi</option>
+                    <option value="5">Ghaziabad</option>
+                    <option value="6">Kanpur</option>
+                    <option value="7">Lucknow</option>
+                    <option value="8">Mirzapur</option>
+                    <option value="9">Mumbai</option>
+                    <option value="10">Noida</option>
+                    <option value="11">Panvel</option>
+                    <option value="12">Pune</option>
+                    <option value="13">Surat</option>
+                    <option value="14">Vapi</option>
+                    <option value="15">Varanasi</option>
+                </select><br>
+                <input type="date" name="pickup date" class="pickupDate" value="DD-MM-YYYY" min="01-01-2022" max="31-12-2023">
+                <input type="time" name="pickup time" class="pickupTime" value="hh-min" form><br>
+                <button>CHECK AVAILABILITY</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="popularHeading">OUR TOP BOOKED CARS</h1><hr id="carBelow">
+    <div class="carGallery">
+        <h1>Cars</h1>
+        <div class="cardHolder">
+            <div class="card">
+                <img src="/Assets/Images/astonmartin.jpg" alt="">
+                <h2>ASTON MARTIN</h2>
+                <h3>Rs.20000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/mclaren.jpg" alt="">
+                <h2>McLAREN</h2>
+                <h3>Rs.18000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/lamborghini.jpg" alt="">
+                <h2>LAMBORGHINI</h2>
+                <h3>Rs.12000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/volvo xc60.jpg" alt="">
+                <h2>VOLVO XC60</h2>
+                <h3>Rs.3000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/ferrari488.jpg" alt="">
+                <h2>FERRARI 488</h2>
+                <h3>Rs.15000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/bmw-8.jpg" alt="">
+                <h2>BMW 8</h2>
+                <h3>Rs.5000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/buggati.jpg" alt="">
+                <h2>BUGGATI CHIRON</h2>
+                <h3>Rs.10000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/maseratim20.jpg" alt="">
+                <h2>MASERATI MC20</h2>
+                <h3>Rs.15000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/rangerover.jpg" alt="">
+                <h2>RANGE ROVER</h2>
+                <h3>Rs.10000/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+            <div class="card">
+                <img src="/Assets/Images/porshe.jpg" alt="">
+                <h2>PORSCHE CAYMAN</h2>
+                <h3>Rs.7500/hr</h3>
+                <button>RENT NOW</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="popularHeading">OUR SERVICES</h1><hr id="servicesBelow">
+    <div class="servicescontainer">
+        <div class="div1"><img src="/Assets/Icons/icons8-loading-heart.gif"><h3>City Ride</h3><p>Drive as per your<br>convenience and explore the<br>city.</p></div>
+        <div class="div2"><img src="/Assets/Icons/icons8-hover-car.gif"><h3>Luxury Cars</h3><p>Huge range of luxury<br>cars of almost ever brand<br>and at affordable rates.</p></div>
+        <div class="div3"><img src="/Assets/Icons/icons8-star.gif"><h3>Insurance</h3><p>Make your ride more<br>safer with our insurance<br>policy.</p></div>
+        <div class="div4"><img src="/Assets/Icons/icons8-clock.gif"><h3>Go Anywhere</h3><p>On a vacation?<br>Enjoy it with our services.</p></div>
+        <div class="div5"><img src="/Assets/Icons/icons8-combo-chart.gif"><h3>Flexi Packages</h3><p>We have awesome package deals<br>for you.</p></div>
+        <div class="div6"><img src="/Assets/Icons/icons8-calendar.gif"><h3>24*7 Assistance</h3>Need any help?<br>Contact us any time and we will<br>be there to help you out.</div>
+    </div>
+    <h1 class="popularHeading">ABOUT US</h1><hr id="aboutBelow">
+    <div class="aboutcontainer">
+        <div class="about1">
+            <img src="/Assets/Images/w180.png" alt="">
+            <h1>Welcome<br>Rental cars</h1>
+            <p id="p1">We have a very vast collection of different varieties of car.<br>That let's you choose best one for you.</p>
+        </div>
+        <div class="about2">
+            <img src="/Assets/Images/mustang.jpg" alt="">
+            <h1>About Our Cars</h1>
+            <p id="p2">Well maintained cars. We have all varities like vintage, supercars,<br>racing cars, economy cars, etc.</p>
+        </div>
+        <div class="about3">
+            <img src="/Assets/Images/lambo.png" alt="">
+            <h1>Great Rental Offers<br>For You</h1>
+            <p id="p3">Great and affordable price for cars on rent.<br>So you can enjoy your ride without disturbing to budget.</p>
+        </div>
+        <div class="about4">
+            <img src="/Assets/Images/vectors.jpg" alt="">
+            <h1>Luxury Cars at<br>Very Affordable Rates</h1>
+            <p id="p4">We avail Luxury cars of almost every company at<br>a very reasonable and affordable rates.</p>
+        </div>
+    </div>
+    <h1 class="popularHeading">CONTACT US</h1><hr id="contactBelow">
+    <p id="pmain">Have any issue?<br>Contact us now and we will be there to assist you soon.</p>
+    <div class="contactbox">
+        <label for="name">Full Name: </label>
+        <input type="text" id="text1"><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email1"><br>
+        <label for="message">Message: </label>
+        <input type="text" id="message1"><br>
+        <button>SEND</button>
+    </div>
+</body>
+</html>
