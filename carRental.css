@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+body{
+    overflow: scroll;
+}
+
+#topHeader{
+    background-color: #ffbf00;
+    border: 1px solid #ffbf00;
+}
+
+.header{
+    width: auto;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headcontainer{
+    width: 50%;
+    height: inherit;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.headings{
+    background-color: inherit;
+    padding: 11px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.headings:hover, .headings::selection{
+    background-color: #ffbf00;
+    color: white;
+}
+
+.headImgcontainer{
+    height: 350px;
+}
+#headerImg{
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+}
+#head1, #head2{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    top: 0;
+    margin-top: 260px;
+    right: 0;
+    margin-right: 20px;
+}
+#head2{
+    margin-top: 300px;
+    font-size: larger;
+    font-weight: 100;
+}
+
+.header2{
+    width: auto;
+    height: 150px;
+    margin: 0px;
+    border: none;
+    background-color: #ffbf00;
+    position: relative;
+}
+.header2 h1 , h4{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+.header2 h4{
+    top: 70px;
+}
+
+.popularHeading{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+#popBelow, #bookBelow, #carBelow, #servicesBelow, #aboutBelow, #contactBelow{
+    height: 4px;
+    background-color: #ffbf00;
+    width: 400px;
+    transform: translateX(135%);
+    margin-bottom: 40px;
+    border: none;
+}
+#bookBelow{
+    width: 200px;
+    transform: translateX(315%);
+}
+#carBelow{
+    width: 300px;
+    transform: translateX(195%);
+}
+#servicesBelow{
+    width: 150px;
+    transform: translateX(440%);
+}
+#aboutBelow{
+    width: 100px;
+    transform: translateX(680%);
+}
+#contactBelow{
+    width: 150px;
+    transform: translateX(438%);
+}
+
+.popPlaces{
+    margin: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popPlaces .row{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.placesBox{
+    margin: auto;
+    position: relative;
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+}
+.placesBox:hover{
+    background-color: #ffbf00;
+}
+.places{
+    height: 180px;
+    width: 250px;
+    /* border: 2px solid; */
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px;
+}
+
+.popPlaces .row .placesBox .popNames{
+    margin-bottom: 5px;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+.popPlaces .row .placesBox:hover{
+    transform: translateY(-10%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.formcontainer{
+    width: 90%;
+    height: 600px;
+    background-color: white;
+    /* border: 2px solid; */
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 30px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.form{
+    width: 75%;
+    background-color: #ffbf00;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    position: relative;
+}
+
+.formcontainer img{
+    position: absolute;
+    height: 450px;
+    width: 700px;
+    right: 0;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.fillupForm{
+    height: 70%;
+    width: 35%;
+    background-color: white;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 150px;
+    border-radius: 10px;
+}
+
+.formcontainer .form .fillupForm h1{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.formcontainer .form .fillupForm .locations{
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 80%;
+    height: 30px;
+}
+.formcontainer .form .fillupForm .pickupDate{
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 40%;
+    cursor: pointer;
+}
+.formcontainer .form .fillupForm .pickupTime{
+    height: 30px;
+    width: 30%;
+    margin-right: 35px;
+    margin-left: 27px;
+    cursor: pointer;
+}
+.formcontainer .form .fillupForm button{
+    width: 80%;
+    background-color: #ffbf00;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 35px;
+    border: none;
+    color: white;
+    font-size: large;
+}
+.formcontainer .form .fillupForm button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.carGallery{
+    width: auto;
+    height: 550px;
+    background-color: #ffbf00;
+    position: relative;
+}
+.carGallery h1{
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+}
+
+.carGallery .cardHolder{
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border-radius: 15px;
+}
+.carGallery .cardHolder::-webkit-scrollbar{
+    display: none;
+}
+.carGallery .cardHolder .card{
+    margin: 0px 10px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+}
+.carGallery .cardHolder .card:hover{
+    transform: scale(1.05);
+}
+
+.carGallery .cardHolder .card img{
+    border-radius: 15px 15px 0px 0px;
+    width: 300px;
+    height: 50%;
+}
+.carGallery .cardHolder .card h2{
+    margin-top: 10px;
+}
+.carGallery .cardHolder .card h3{
+    margin-top: 20px;
+}
+
+.carGallery .cardHolder .card button{
+    margin-top: 45px;
+    height: 35px;
+    width: 100px;
+    border-radius: 10px;
+    /* border: none; */
+    background-color: #ffbf00;
+    cursor: pointer;
+}
+.carGallery .cardHolder .card button:hover{
+    transform: scale(1.05);
+}
+
+.servicescontainer{
+    height: 500px;
+    width: 100%;
+    border: 2px solid;
+
+}
+
+
+.aboutcontainer{
+    width: 100%;
+    height: 1500px;
+}
+
+.aboutcontainer .about1, .about2, .about3, .about4{
+    width: auto;
+    height: 25%;
+    transform: skewY(3deg);
+    background-color: #ffbf00;
+    position: relative;
+}
+.aboutcontainer .about2, .about4{
+    background-color: white;
+}
+
+.about1 img{
+    width: 750px;
+    height: 300px;
+    filter: saturate(1.65);
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.about1 h1, #p1{
+    color: white;
+    transform: skewY(-3deg);
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    font-size: 70px;
+}
+.about1 #p1{
+    font-size: larger;
+    right: 9%;
+    top: 60%;
+}
+.about2 img{
+    width: 700px;
+    height: 400px;
+    transform: skewY(-5deg);
+    mix-blend-mode: multiply;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    right: 30px;
+}
+
+.about2 h1, #p2{
+    color: black;
+    transform: skewY(-3deg);
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 70px;
+}
+.about2 #p2{
+    font-size: larger;
+    left: 10%;
+    top: 50%;
+}
+
+.about3 img{
+    width: 750px;
+    height: 350px;
+    position: absolute;
+    top: 20px;
+
+}
+
+.about3 h1, #p3{
+    color: white;
+    transform: skewY(-3deg);
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    font-size: 70px;
+}
+.about3 #p3{
+    font-size: larger;
+    top: 60%;
+    right: 210px;
+}
+
+.about4 img{
+    position: absolute;
+    right: 0;
+    height: 300px;
+    top: 50px;
+    right: 30px;
+}
+.about4 h1, #p4{
+    transform: skewY(-3deg);
+    position: absolute;
+    font-size: 70px;
+    top: 25%;
+    left: 40px;
+}
+.about4 #p4{
+    font-size: larger;
+    top: 65%;
+    left: 50px;
+}
