@@ -477,7 +477,6 @@ body{
 }
 
 .contactbox{
-
     width: 100%;
     height: 600px;
     align-items: center;
@@ -517,5 +516,13 @@ body{
 
 .contactbox button:hover{
     transform: scale(1.05);
-    
+}
+
+.contactbox .footer{
+    background-color: #ffbf00;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
 }
